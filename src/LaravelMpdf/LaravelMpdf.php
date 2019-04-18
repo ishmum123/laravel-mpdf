@@ -43,6 +43,8 @@ class LaravelMpdf {
 			]),
 			'fontdata' => $fontData + $this->getConfig('custom_font_data'),
 			'default_font' => $this->getConfig('default_font')
+			'autoScriptToLang' => $this->getConfig('auto_language_detection'), 
+			'autoLangToFont' => $this->getConfig('auto_language_detection')
 		]);
 
 		$this->mpdf->SetTitle         ( $this->getConfig('title') );
